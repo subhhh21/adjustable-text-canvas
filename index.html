@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Text Manipulation</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <button id="addText">Add Text</button>
+    <button id="undo">Undo</button>
+    <button id="redo">Redo</button>
+    
+    <label for="fontSize">Font Size:</label>
+    <select id="fontSize">
+        <option value="16">16</option>
+        <option value="20">20</option>
+        <option value="24">24</option>
+        <option value="30">30</option>
+        <option value="36">36</option>
+        <option value="48">48</option>
+        <option value="60">60</option>
+    </select>
+
+    <label for="fontStyle">Font Style:</label>
+    <select id="fontStyle">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+    </select>
+
+    <button id="applyChanges">Apply Changes</button>
+
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
